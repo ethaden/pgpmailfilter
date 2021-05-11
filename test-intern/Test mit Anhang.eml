@@ -1,0 +1,95 @@
+Return-path: <eike.thaden@posteo.de>
+Envelope-to: mail@eike-thaden.de
+Delivery-date: Fri, 07 May 2021 23:49:38 +0200
+Received: from mout01.posteo.de ([185.67.36.65])
+	by mail.eike-thaden.de with esmtps (TLS1.3:ECDHE_RSA_AES_256_GCM_SHA384:256)
+	(Exim 4.92)
+	(envelope-from <eike.thaden@posteo.de>)
+	id 1lf8Lp-0007E3-AG
+	for mail@eike-thaden.de; Fri, 07 May 2021 23:49:38 +0200
+Received: from submission (posteo.de [89.146.220.130]) 
+	by mout01.posteo.de (Postfix) with ESMTPS id D95BB240027
+	for <mail@eike-thaden.de>; Fri,  7 May 2021 23:49:36 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=posteo.de; s=2017;
+	t=1620424176; bh=8DiByA+vUCN8lmpVJEFLg7/8RBkDO7LLfr1pxXTHibQ=;
+	h=To:From:Subject:Date:From;
+	b=cJXBiZ5ko+N463ggpx9ujZ3m2nVO7hoHjWDJtjPVl+4jfVMoA51OHyAmdl0nAs2vz
+	 3FL/Mvje7zti8sb4RUjF35PDArmDbSzW8b6p5w5CAX+TtmEeFMDWmYedq+XKly5EvH
+	 1VzIehlx3YjIrq2Z93JEtlrLjit3h1INRGIeK1lixPDA26XqlJQwHaf0qpVZqcl3+q
+	 Wn1LqiXba0yGfglekFk3oI75zhsLn64nT/SMA0A5Tr73m77pTGRl61kAIFeL0SMX6G
+	 1F8bxnbVI1B1CthTa9G9sQktEF8kWmfzzzpRvX8IqZ+pr5I2wopcpWCjcnaccnVhjw
+	 BkwE6mp7uxT0w==
+Received: from customer (localhost [127.0.0.1])
+	by submission (posteo.de) with ESMTPSA id 4FcPHM6wFVz6tmP
+	for <mail@eike-thaden.de>; Fri,  7 May 2021 23:49:35 +0200 (CEST)
+To: Eike Thaden <mail@eike-thaden.de>
+From: Eike Thaden <eike.thaden@posteo.de>
+Subject: Test mit Anhang
+Message-ID: <afcc1f1a-f5b4-bbfb-70d5-a2dead5502cc@posteo.de>
+Date: Fri,  7 May 2021 21:49:34 +0000
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha256;
+ protocol="application/pgp-signature";
+ boundary="OJwEzXD5X0x6dlkiGbqEejcxGNcfNXQHd"
+Received-SPF: pass client-ip=185.67.36.65; envelope-from=eike.thaden@posteo.de; helo=mout01.posteo.de
+X-Spam-Score: -2.5 (--)
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--OJwEzXD5X0x6dlkiGbqEejcxGNcfNXQHd
+Content-Type: multipart/mixed; boundary="Hj21nGNWZFriPlrIctQe2GuwZ621Zfpho";
+ protected-headers="v1"
+From: Eike Thaden <eike.thaden@posteo.de>
+To: Eike Thaden <mail@eike-thaden.de>
+Message-ID: <afcc1f1a-f5b4-bbfb-70d5-a2dead5502cc@posteo.de>
+Subject: Test mit Anhang
+
+--Hj21nGNWZFriPlrIctQe2GuwZ621Zfpho
+Content-Type: multipart/mixed;
+ boundary="------------529F24E1ED45AEF7F4D2C67E"
+Content-Language: de-DE
+
+This is a multi-part message in MIME format.
+--------------529F24E1ED45AEF7F4D2C67E
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: quoted-printable
+
+Dies ist eine unverschl=C3=BCsselte E-Mail mit Anhang.
+
+Und Zeilenumbr=C3=BCchen.
+
+
+
+--------------529F24E1ED45AEF7F4D2C67E
+Content-Type: text/plain; charset=UTF-8;
+ name="Beispiel-Anhang-E-Mail.txt"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename="Beispiel-Anhang-E-Mail.txt"
+
+RGllcyBpc3QgZWluIEJlaXNwaWVsLUFuaGFuZyBlaW5lciBFLU1haWwuDQo=
+--------------529F24E1ED45AEF7F4D2C67E--
+
+--Hj21nGNWZFriPlrIctQe2GuwZ621Zfpho--
+
+--OJwEzXD5X0x6dlkiGbqEejcxGNcfNXQHd
+Content-Type: application/pgp-signature; name="OpenPGP_signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="OpenPGP_signature"
+
+-----BEGIN PGP SIGNATURE-----
+
+wsF5BAABCAAjFiEEi704qLfClpWFqds3+TIBSeX6BWEFAmCVte4FAwAAAAAACgkQ+TIBSeX6BWGV
+HxAAi34879eLKzkbuN6MULxSRV+T+c0aOR7wm2qF4j/DbtBAYRSF1aSrBvJLDiD3GIC4mqbxyYFc
+tBh//+dSPt7n7aBxcsJxVXwSGCjHGzMEGacbOfmdAPSc7BInyWdfiNxUnvbsMJMVc/7Tm5niAMcY
+5SMMxHzj4ZdUtxY0o0Dc6cwFtvJAhbsDIKLdPjiXJgzCanWqvhd9hd9WsL1QcnFYcQ1olMn6ybZP
+o+HFejG3fI1o5hpHH9E9DDcgzWrWJgDirPWXUy30fbQZ3Uc1Yrm0yn0kJeU2iui1skCjwW+o7+9g
+BB8B4nsfxeC/vmXvYOU365PpBhFzGwdThvryRwM1AuBwo9jU8J9hRLIZa4YL78GR5nfHS/aMX/Xs
+HryF0YwxcETQE/GkJj0v1FXtukEsvNEYn0U8AJG2oibxoKhb8VQ7GTjmfzmzuZOJAdl0pBqTFa7R
+5EP9lCi1FnXlGSEv1jmNm4WdcoNOidnfTj6EHm8lKSZVUOSy7zL3Wyp2dN0TOGJwlK3Wz9bolCY8
+P6XDno4bSpEwglzFPHjiHfDvZD34O8a2x82E526x4M9dwAXqiNwz+8WYtQn9Gcar+EKBnl0lQrCA
+8gO2PeKDHma5cH3dPTap3c01rEydXgNpWFRgW0CerZ2DT3wzjB9+i1t98VkP3AGC2/1AHgr1BzVe
+dqw=
+=aAdv
+-----END PGP SIGNATURE-----
+
+--OJwEzXD5X0x6dlkiGbqEejcxGNcfNXQHd--

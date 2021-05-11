@@ -1,0 +1,18 @@
+From test@invalid Wed Apr 28 17:02:25 2021
+Received: (qmail 12345 invoked by alias); Wed, 28 Apr 2021 17:00:00 +0000
+Received: by server1 (Postfix, from userid 1000)
+  id D1234F1234; Wed, 28 Apr 2021 16:59:00 +0100 (CET)
+Date: Wed, 28 Apr 2021 16:58:12 +0100
+Subject: Test-Email (unencrypted)
+Message-ID: <123456.987654@invalid>
+From: Test Sender <test@invalid>
+From: Test Receiver <test2@invalid>
+Content-Type: text/plain; charset=UTF-8
+In-Reply-To: <1234567890@invalid>
+
+Hello,
+
+this is some text.
+
+Best regards,
+Test userid
